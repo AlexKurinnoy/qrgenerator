@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>for Ira</title>
+    <style>
+    #qr-data {
+        width: 350px;
+        height: 30px;
+        border: 1px solid darkmagenta;
+        border-radius: 5px;
+        margin: 50px auto;
+        font-size: 20px;
+        padding-left: 5px;
+    }
+    #qrcode{
+        margin: 40px auto;
+    }
+    #er{
+        margin: 10px auto;
+    }
+    .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;}
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <input type="text" id="qr-data" onchange="generatorQR()">
+    <div id="er"></div>
+    <div id="qrcode"></div>
+
+
+</div>
+</body>
+<script src="qrcode.min.js"></script>
+<script src="main.js"></script>
+
+
+</html>
